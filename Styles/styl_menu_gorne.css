@@ -1,0 +1,107 @@
+
+@media (min-width: 800px) {
+    #nazwa{visibility: visible; 
+    grid-area: 1/2/2/3;
+    }
+    .menu_gorne1{visibility: visible;
+    grid-area: 2/3/3/7;}
+    .menu_gorne2{visibility: hidden;}
+    #logo{visibility: hidden;}
+    header{
+        max-height: 10vh;
+   position: sticky;
+   top:0;
+   z-index: 2;
+   display: grid;
+   grid-template-rows: 30% 40% 30%;
+   grid-template-columns: 30% 8% 8% 8% 8% 8% 30%;}
+   #m2p1{visibility: hidden;}
+   #m2p2{visibility: hidden;}#m2p3{visibility: hidden;}#m2p4{visibility: hidden;}}
+   
+@media (min-width: 601px){
+.menu_gorne2{visibility: hidden;}
+#nazwa{visibility:hidden;}
+.menu_gorne1{visibility: visible;
+    grid-area:2/3/3/7;}
+#logo{visibility: visible;
+max-width: 5vw;
+grid-area: 1/2/4/3;
+animation-name: logo_1;
+animation-duration: 2s;
+transition: transform 3s;}
+#logo:hover{
+    transform:rotate(360deg)}
+header{
+    max-height: 10vh;
+position: sticky;
+top:0;
+z-index: 2;
+display: grid;
+grid-template-rows: 30% 40% 30%;
+grid-template-columns: 30% 8% 8% 8% 8% 8% 30%;}
+#m2p1{visibility: hidden;}
+#m2p2{visibility: hidden;}#m2p3{visibility: hidden;}#m2p4{visibility: hidden;}}
+
+
+@media (max-width: 600px){#nazwa{visibility: hidden;}
+.menu_gorne1{visibility: hidden;}
+header{
+    max-height: 10vh;
+position: sticky;
+top:0;
+z-index: 2;
+display: grid;
+grid-template-rows: 30% 40% 30%;
+grid-template-columns: 28% 8% 1% 8% 1% 8% 1% 8% 1% 8% 28%;}
+    #m2p1{
+        visibility: visible;
+        grid-area: 1/4/4/5;
+    max-height: 10vh;
+    background-color: var(--jszary);
+}
+  
+    #m2pic1{
+        max-height: 8vh;
+        }
+#m2p2{
+    visibility: visible;
+    grid-area: 1/6/4/7;
+max-height: 10vh;
+background-color: var(--jszary);
+
+}
+#m2pic2{
+    max-height: 8vh;
+   }
+#m2p3{
+    visibility: visible;
+    grid-area: 1/8/4/9;
+    max-height: 10vh;
+    background-color: var(--jszary);
+    }
+    #m2pic3{
+        max-height: 8vh;}
+#m2p4{
+    visibility: visible;
+    grid-area: 1/10/4/11;
+    max-height: 10vh;
+    background-color: var(--jszary);
+   }
+    #m2pic4{
+        max-height: 8vh;}
+#logo{visibility: visible;
+    max-height: 10vh; 
+    grid-area: 1/2/4/3;
+    animation-name: logo_1;
+    animation-duration: 2s;
+transition: transform 3s;}
+#logo:hover{
+   transform:rotate(360deg)}}
+
+  @keyframes logo_1
+  {
+    0% {-webkit-transform: translateX(-1000px);}              
+    100%{-webkit-transform: translateX(0px);}
+  
+  }
+ 
